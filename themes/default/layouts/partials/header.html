@@ -1,0 +1,12 @@
+{{ if .IsHome }}
+<header class="global-header">
+  <h1>{{ .Site.Title }}</h1>
+  <nav class="global-nav">
+    {{ partial "nav" . }}
+  </nav>
+</header>
+{{ else }}
+<aside class="global-header">
+  <a href="/">&larr; back</a> / written by author on date
+</aside>
+{{ end }}

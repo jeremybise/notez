@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Jeremy Bise"
+theme = ["default"]
+googleAnalytics = ""
+enableEmoji = true
+#disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[[menus.main]]
+  identifier = "github"
+  name = "Github"
+  url = "https://github.com/jeremybise"
+  weight = 1
+
+[[menus.main]]
+  identifier = "twitter"
+  name = "Twitter"
+  url = "https://twitter.com/jeremybise"
+  weight = 2
+
+[[menus.main]]
+  identifier = "twitch"
+  name = "Twitch"
+  url = "https://twitch.tv/flarpamingus"
+  weight = 3
+
+[params]
+  mainSections = ["post"]
+  google_fonts = [
+    ["Open Sans", "400,700"],
+  ]
+  heading_font = "Open Sans"
+  body_font = "Open Sans"
+  #description = "" # OpenGraph
+  #title = "" # OpenGraph + Twitter cards
+  #images = [] # OpenGraph + Twitter cards

@@ -1,0 +1,12 @@
+body {
+  background: $light_color;
+  color: $dark_color;
+  @include dark-mode {
+    background: $dark_color;
+    color: $light_color;
+  }
+}
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+}

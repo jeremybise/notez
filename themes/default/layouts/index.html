@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="wrapper">
+  {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
+    <a href="{{ .RelPermalink }}" class="post">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Summary | plainify }}</p>
+      <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+    </a>
+  {{ end }}
+</div>
+{{ end }}
